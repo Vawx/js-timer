@@ -16,7 +16,7 @@ Timer.prototype.getTimerByName = function( timername )
 {
     for( var i = 0; i < timers.length; i++ )
     {
-        if( timers[ i ].timername == timername )
+        if( timers[ i ].timername === timername )
         {
             return timers[ i ];
         }
@@ -42,7 +42,7 @@ Timer.prototype.existsByName = function( timername )
 {
     for( var i = 0; i < timers.length; i++ )
     {
-        if( timername == timers[ i ].timername )
+        if( timername === timers[ i ].timername )
         {
             return true;
         }
